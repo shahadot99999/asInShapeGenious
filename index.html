@@ -115,28 +115,39 @@
 
                   
 
-                   <!-- traiangle card -->
+                  
                
-                <div class="card bg-base-100 w-96 shadow-xl">
-                  <figure class="px-10 pt-10">
-                    <img
-                    src="images/triangle.png"
-                      alt="Shoes"
-                      class="rounded-xl" />
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="card-title">Triangle</h2>
-                    <p>Area: 0.5*b*h</p>
-                     <input type="text" placeholder="b" >
-                     <span>cm</span>
-                     <input type="text" name="" id=" " placeholder="h" >
-                     <span>cm</span>
+               <!-- Rhombus Card -->
+               <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/rhombus.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area = 0.5 * d1 *d2 </p>
+                  <div class="flex">
+                    <!-- diagonal 1 -->
+                    <input type="text" name="" id="rhombus-diagonalOne" class="w-24 text-2xl p-2 rounded-sm" placeholder="diagonal 1">
+                    <span class="mr-4 ml-2">cm</span>
 
-                    <div class="card-actions">
-                      <button class="btn btn-primary  w-full">Calculate</button>
-                    </div>
+                    <!-- diagonal 2-->
+                    <input type="text" name="" id="rhombus-diagonalTwo"  class="w-24 text-2xl p-2 rounded-sm" placeholder="diagonal 2">
+                    <span>cm</span>
+                  </div>
+
+                  <!-- show calculate number -->
+                   <div>
+                   <p class="text-2xl">Area:  <span id="rhombus-area">0</span><span>cm<sub>2</sub></span> </p>
+                   </div>
+
+                  <div class="card-actions">
+                    <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
                   </div>
                 </div>
+              </div>
 
                    <!-- traiangle card -->
                 <div class="card bg-base-100 w-96 shadow-xl">
@@ -161,5 +172,6 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-area.js"></script>
     <script src="scripts/parallelogram-area.js"></script>
+    <script src="scripts/rhombus-area.js"></script>
 </body>
 </html>
