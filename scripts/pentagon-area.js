@@ -1,4 +1,4 @@
-console.log('pentagon is connected');
+//console.log('pentagon is connected');
 
 function calculatePentagonArea(){
     //console.log('pentagon is connected');
@@ -24,3 +24,5 @@ function calculatePentagonArea(){
     pentagonAreaSpan.innerText = area;
     
 }
+
+

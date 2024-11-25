@@ -178,19 +178,42 @@
                 </div>
               </div>
 
-                   <!-- traiangle card -->
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                    </div>
-                    <figure>
-                      <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
-                    </figure>
+                   <!-- Ellipse card -->
+               
+               <div class="card bg-base-100 w-96 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="images/ellipse.png"
+                    alt="Shoes"
+                    class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area = 3.1416 * a * b </p>
+                  <div class="flex">
+                    <!-- Semi major A  -->
+                    <input type="text" name="" id="ellipse-semi-majorA" class="w-24 text-2xl p-2 rounded-sm" placeholder=" semi-majorA">
+                    <span class="mr-4 ml-2">cm</span>
+
+                    <!-- Semi major B-->
+                    <input type="text" name="" id="ellipse-semi-majorB"  class="w-24 text-2xl p-2 rounded-sm" placeholder="semi-majorB">
+                    <span>cm</span>
                   </div>
-            </div>
+
+                  <!-- show calculate number -->
+                   <div>
+                   <p class="text-2xl">Area:  <span id="ellipse-area">0</span><span>cm<sub>2</sub></span> </p>
+                   </div>
+
+                  <div class="card-actions">
+                    <button onclick="calculateellipseArea()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
             <!-- area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md ">
                <h3 class="text-3xl text-center p-4">Area calculation</h3>
@@ -203,5 +226,6 @@
     <script src="scripts/parallelogram-area.js"></script>
     <script src="scripts/rhombus-area.js"></script>
     <script src="scripts/pentagon-area.js"></script>
+    <script src="scripts/ellipse-area.js"></script>
 </body>
 </html>
